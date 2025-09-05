@@ -30,7 +30,7 @@ jobs:
         run: echo Hello, world!
         
       - name: ncipollo
-      - uses: ncipollo/release-action@v1
+        uses: ncipollo/release-action@v1
         with:
           artifacts: "release.tar.gz,foo/*.txt"
           bodyFile: "body.md"
