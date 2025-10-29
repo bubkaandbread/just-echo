@@ -21,7 +21,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Test docker
-        uses: docker://ghcr.io/rtcamp/action-slack-notify
+        uses: docker://ghcr.io/rtcamp/action-slack-notify:v2.3.3
       - name: Run Hello World Docker Action
         uses: ./actions/hello-world
         env:
