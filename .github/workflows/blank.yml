@@ -21,7 +21,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Test docker
-        uses: docker://ghcr.io/rtcamp/action-slack-notify:v2.3.3
+        uses: docker://us-docker.pkg.dev/aura-networking/docker-registry-public/automate-github-action@sha256:679b9fc801220c36613954c84a6fb14667476bdb30e7211e947cc8f9dd19f9de
       - name: Run Hello World Docker Action
         uses: ./actions/hello-world
         env:
