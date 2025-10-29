@@ -20,7 +20,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
+      - name: Test docker
+        uses: docker://ghcr.io/rtcamp/action-slack-notify
       - name: Run Hello World Docker Action
         uses: ./actions/hello-world
         env:
